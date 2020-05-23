@@ -1,0 +1,13 @@
+DROP PROCEDURE IF EXISTS getIVA;
+ 
+DELIMITER $$
+ 
+CREATE PROCEDURE getIVA()
+
+BEGIN
+
+	SELECT 	iva
+	FROM configuracion;
+
+END $$
+DELIMITER ;
